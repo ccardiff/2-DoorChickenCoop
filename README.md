@@ -10,16 +10,6 @@ The 2-Door Simple Chicken Coop program is designed to automate the opening and c
 -uses a minimum temperature to keep chickens indoors when cold. This variable can be easily changed as a universal variable at the top of the code. 
 -uses a simple Time Open and Time Closed time-based control that can be user set. Currently two season mode settings. 
 
-There are still currently some bugs that need to be worked out. 
-
-Timekeeping errors. Currently unclear if software or hardware related. 
- 
-
-Cheers. 
-
- 
-
- 
 
 Features
 Temperature Sensing: Measures the temperature outside the chicken coop using a DallasTemperature sensor to prevent chickens from exiting coop if too cold. Can modify universal value at top of code. 
