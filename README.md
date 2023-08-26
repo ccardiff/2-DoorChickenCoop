@@ -6,9 +6,10 @@ This code was generated with the assistance of ChatGPT-4.
 
 The 2-Door Simple Chicken Coop program is designed to automate the opening and closing of doors in a chicken coop. The script incorporates various hardware components such as temperature sensors, real-time clocks, LCD displays, and motors. The code is modular and makes use of several libraries for seamless integration of these components. Please use the builds of other creators found on this site. This code is unique in that it: 
 
-allows for control of two doors independently. One button can cycle through Door 1 only, Door 2 only, Door 1+Door 2, and neither Door 1+2 
-uses a minimum temperature to keep chickens indoors when cold. This variable can be easily changed as a universal variable at the top of the code. 
-uses a simple Time Open and Time Closed time-based control that can be user set. Currently two season mode settings. 
+-allows for control of two doors independently. One button can cycle through Door 1 only, Door 2 only, Door 1+Door 2, and neither Door 1+2 
+-uses a minimum temperature to keep chickens indoors when cold. This variable can be easily changed as a universal variable at the top of the code. 
+-uses a simple Time Open and Time Closed time-based control that can be user set. Currently two season mode settings. 
+
 There are still currently some bugs that need to be worked out. 
 
 Timekeeping errors. Currently unclear if software or hardware related. 
