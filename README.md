@@ -2,6 +2,8 @@
 # Simple 2-Door Chicken Coop Doors Control System (Arduino-based)
 
 ## Overview
+Generated with the assistance of GPT-4.
+
 This Arduino-based system allows you to control two separate doors for a chicken coop. The system is designed to provide an automated and manual way to control the opening and closing of the doors, keeping your chickens safe and making your life easier.
 
 ## Features
