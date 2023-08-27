@@ -15,7 +15,7 @@ This Arduino-based system allows you to control two separate doors for a chicken
 - **Manual Override**: Includes physical switches for manual operation.
 
 ## Two-Door Operation
-![Two-Door Operation](2 Door Chicken COop.jpg)
+(2 Door Chicken COop.jpg)
 
 ## Code Description
 
