@@ -1,5 +1,5 @@
 
-# Simple 2-Door Chicken Coop Doors Control System (Arduino-based)
+# Simple 2-Door Chicken Coop Control System (Arduino-based)
 
 ## Overview
 Generated with the assistance of GPT-4.
