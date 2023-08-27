@@ -1,37 +1,115 @@
-Project Description: Simple Chicken Coop Two Door Controller
 
-Overview
-This code was generated with the assistance of ChatGPT-4. 
+# Simple 2-Door Chicken Coop Doors Control System (Arduino-based)
 
-The 2-Door Simple Chicken Coop program is designed to automate the opening and closing of two doors in a chicken coop. The script incorporates various hardware components such as temperature sensors, real-time clocks, LCD displays, and motors. The code is modular and makes use of several libraries for seamless integration of these components. Please use the builds of other creators found on this site. This code is unique in that it: 
+## Overview
+This Arduino-based system allows you to control two separate doors for a chicken coop. The system is designed to provide an automated and manual way to control the opening and closing of the doors, keeping your chickens safe and making your life easier.
 
--allows for control of two doors independently. One button can cycle through Door 1 only, Door 2 only, Door 1+Door 2, and neither Door 1+2 
--uses a minimum temperature to keep chickens indoors when cold. This variable can be easily changed as a universal variable at the top of the code. 
--uses a simple Time Open and Time Closed time-based control that can be user set. Currently two season mode settings. 
+## Features
+
+- **Two-Door Operation**: Control two separate doors independently.
+- **Real-Time Clock (RTC)**: Uses a real-time clock to perform operations at specific times.
+- **Temperature Sensing**: Monitors the temperature inside the coop.
+- **LCD Interface**: Provides a user-friendly LCD interface to display information.
+- **Manual Override**: Includes physical switches for manual operation.
+
+## Code Description
+
+### Libraries Used
+The code makes use of several libraries:
+- Wire
+- OneWire
+- RTClib
+- DallasTemperature
+- LiquidCrystal_I2C
+- OneButton
+- EEPROM
+
+### Pin Configuration
+Here are the pins used for different components:
+
+- **Motor Pins**: 
+  - Door 1: `MOTOR_PIN1`, `MOTOR_PIN2`
+  - Door 2: `MOTOR_PIN3`, `MOTOR_PIN4`
+
+- **Switch Pins**:
+  - Open Door 1: `OPEN_DOOR_1_SWITCH_PIN`
+  - Close Door 1: `CLOSE_DOOR_1_SWITCH_PIN`
+  - Open Door 2: `OPEN_DOOR_2_SWITCH_PIN`
+  - Close Door 2: `CLOSE_DOOR_2_SWITCH_PIN`
+
+### Two-Door Operation
+The code for the two-door operation is the core of the system. The Arduino listens for signals from the switches or the real-time clock to decide whether to open or close each door. The doors can be operated independently of each other, giving you greater flexibility in managing your coop.
+
+## Installation
+1. Upload the Arduino code to your board.
+2. Connect the hardware as specified in the pin configuration.
+3. Power up the system.
+
+## Future Improvements
+- Implement IoT features to control the doors remotely.
+- Add a weather sensor to adapt to environmental conditions.
+
+## Contributing
+Feel free to submit issues or pull requests to improve the code or add new features.
+
+## License
+MIT
 
 
-Features
-Temperature Sensing: Measures the temperature outside the chicken coop using a DallasTemperature sensor to prevent chickens from exiting coop if too cold. Can modify universal value at top of code. 
+# Simple Chicken Coop Doors Control System (Arduino-based)
 
-Real-Time Clock: Utilizes an RTClib library to keep track of time for scheduled door operations. 
+## Overview
+This Arduino-based system allows you to control two separate doors for a chicken coop. The system is designed to provide an automated and manual way to control the opening and closing of the doors, keeping your chickens safe and making your life easier.
 
-LCD Display: Displays relevant information on an LCD screen using the LiquidCrystal_I2C library. 
+## Features
 
-Motor Control: Operates motors to open and close doors using GPIO pins. 
+- **Two-Door Operation**: Control two separate doors independently.
+- **Real-Time Clock (RTC)**: Uses a real-time clock to perform operations at specific times.
+- **Temperature Sensing**: Monitors the temperature inside the coop.
+- **LCD Interface**: Provides a user-friendly LCD interface to display information.
+- **Manual Override**: Includes physical switches for manual operation.
 
-User Input: Allows manual control of doors via push-buttons using the OneButton library. 
+## Code Description
 
-Persistent Storage: Saves settings and other data in EEPROM for retrieval after resets. 
+### Libraries Used
+The code makes use of several libraries:
+- Wire
+- OneWire
+- RTClib
+- DallasTemperature
+- LiquidCrystal_I2C
+- OneButton
+- EEPROM
 
-Limitations and Future Work
-The code works as intended but there are some errors that occur intermittently. Currently investigating whether hardware or software related. 
+### Pin Configuration
+Here are the pins used for different components:
 
-The current code does not handle edge cases like sensor failure or motor jamming. 
+- **Motor Pins**: 
+  - Door 1: `MOTOR_PIN1`, `MOTOR_PIN2`
+  - Door 2: `MOTOR_PIN3`, `MOTOR_PIN4`
 
-Future iterations may include additional features like remote control via Wi-Fi, or integration with a home automation system. 
+- **Switch Pins**:
+  - Open Door 1: `OPEN_DOOR_1_SWITCH_PIN`
+  - Close Door 1: `CLOSE_DOOR_1_SWITCH_PIN`
+  - Open Door 2: `OPEN_DOOR_2_SWITCH_PIN`
+  - Close Door 2: `CLOSE_DOOR_2_SWITCH_PIN`
 
-Additional Files:
+### Two-Door Operation
+The code for the two-door operation is the core of the system. The Arduino listens for signals from the switches or the real-time clock to decide whether to open or close each door. The doors can be operated independently of each other, giving you greater flexibility in managing your coop.
 
-LimitSwitches: Allows you to test limit switches required to inform program if door has reached open or closed position without full program. 
-MotorTest: Allows you to test the funcionality and polarity of the motors before integrating into main program
+## Installation
+1. Upload the Arduino code to your board.
+2. Connect the hardware as specified in the pin configuration.
+3. Power up the system.
 
+## Future Improvements
+- Implement IoT features to control the doors remotely.
+- Add a weather sensor to adapt to environmental conditions.
+
+## Contributing
+Feel free to submit issues or pull requests to improve the code or add new features.
+
+## License
+MIT
+
+There are two additional files MotorTest and LimitSwitchTest which allow for testing of components before integration. 
