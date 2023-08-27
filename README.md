@@ -62,3 +62,6 @@ Feel free to submit issues or pull requests to improve the code or add new featu
 MIT
 
 There are two additional files MotorTest and LimitSwitchTest which allow for testing of components before integration. 
+
+My Build:
+![ChickenCoop](WIN_20230712_11_09_17_Scan.jpg)
